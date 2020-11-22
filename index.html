@@ -7,29 +7,30 @@
       
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
       <script type="text/javascript">
+      
       $(function(){
           var setImg = '#photo-pc';
-          var fadeSpeed = 2000;
+          var fadeSpeed = 2300;
           var switchDelay = 5000;
       
-          $(setImg).children('img').css({opacity:'0'});
+          $(setImg).children('img').css({opacity:'0.4'});
           $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
       
           setInterval(function(){
-              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              $(setImg + ' :first-child').animate({opacity:'0.4'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
           },switchDelay);
       });
 
       $(function(){
           var setImg = '#photo';
-          var fadeSpeed = 2000;
+          var fadeSpeed = 2300;
           var switchDelay = 5000;
       
-          $(setImg).children('img').css({opacity:'0'});
+          $(setImg).children('img').css({opacity:'0.4'});
           $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
       
           setInterval(function(){
-              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              $(setImg + ' :first-child').animate({opacity:'0.4'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
           },switchDelay);
       });
       </script>   
@@ -67,6 +68,8 @@
     </div>
     
     <div class="covid-title">
+      <div class="covid-line"></div>
+      <div class="covid-line"></div>
       <div class="covid-line"></div>
       <div class="covid-txt">
         新型コロナ<span class="new-line">ウイルス対策</span>しています
