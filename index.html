@@ -3,20 +3,53 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1">
+      
+      
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript">
+      $(function(){
+          var setImg = '#photo-pc';
+          var fadeSpeed = 2000;
+          var switchDelay = 5000;
+      
+          $(setImg).children('img').css({opacity:'0'});
+          $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+      
+          setInterval(function(){
+              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+          },switchDelay);
+      });
+
+      $(function(){
+          var setImg = '#photo';
+          var fadeSpeed = 2000;
+          var switchDelay = 5000;
+      
+          $(setImg).children('img').css({opacity:'0'});
+          $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+      
+          setInterval(function(){
+              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+          },switchDelay);
+      });
+      </script>   
   </head>
+
   <body>
     <header>
       <div class="logo"></div>
       <img src="images/header-tel.png" class="header-tel">
     </header>
 
-    
+    <div id="photo-pc">
       <img src="images/mv-bg.png" class="top-img">
-      <!-- <img src="images/mv2-pc.png" class="top-img"> -->
+      <img src="images/mv2-pc.png" class="top-img">
+    </div>
     
-    <img src="images/mv-sp.png" class="top-img2">
-    <!-- <img src="images/mv2-sp.png" class="top-img2"> -->
-
+    <div id="photo">
+      <img src="images/mv-sp.png" class="top-img2">
+      <img src="images/mv2-sp.png" class="top-img2">
+    </div>
     <div class="contact">
       <img src="images/contact.png" class="contact-img">
     </div>
