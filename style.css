@@ -1,0 +1,923 @@
+/* リセットCSS */
+body {
+  font-size: 19px;
+  color: #000;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* PC画面 */
+@media screen and (min-width: 600px) {
+  header {
+    height: 112px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    width: 192px;
+    height: 73px;
+    background-color: #D3F4FD;
+  }
+
+  .top-img {
+    width: 100vw;
+  }
+  .top-img2 {
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px;
+  }
+
+  .hospital {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 480px;
+    margin: 0 10px;
+  }
+  .hospital-txt {
+    margin-left: 160px;
+    width: 40%;
+  }
+  .hospital-img {
+   margin-right: 160px;
+   width: 40%;
+  }
+
+  .estimate {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    height: 110px;
+    margin: 60px 20px;
+  }
+  .estimate-txt {
+    font-size: 19px;
+    width: 455px;
+    text-align: left;
+    width: 36%;
+  }
+  
+  .covid-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .covid-line {
+    height: 31px;
+    width: 515px;
+    background-color: #FEE63C;
+    position: absolute;
+    margin-top: 30px;
+  }
+  .covid-txt {
+    font-size: 31px;
+    height: 46px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .covid-counterplan {
+    display: flex;
+    justify-content: center;
+    margin: 0 140px 60px 140px;
+    height: 340px;
+  }
+  .covid-counterplan-left {
+    margin-right: 20px;
+    width: 290px;
+    height: 290px;
+  }
+  .covid-counterplan-up {
+    margin-bottom: 15px;
+    vertical-align: top;
+  }
+  .covid-01 {
+    margin-right: 15px;
+    width: 132px;
+  }
+  .covid-02 {
+    width: 132px
+  }
+  .covid-counterplan-down {
+    vertical-align: top;
+  }
+  .covid-03 {
+    margin-right: 15px;
+  }
+  .covid-counterplan-txt {
+    font-weight: bold;
+    font-size: 19px;
+    background-color: #D3F4FD;
+    width: 650px;
+    height: 240px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  li {
+    padding: 0 30px 10px 30px;
+  }
+  .str {
+    font-size: 31px;
+    color: #00539A;
+  }
+  .notes {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  
+  .lists {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 60px 160px;
+    height: 480px;
+  }
+  .list {
+    margin-right: 20px;
+    border: 1px solid #0000001A;
+    padding: 15px;
+    max-width: 100%;
+    justify-content: center;
+    width: 80%;
+  }
+  .list-right {
+    border: 1px solid #0000001A;
+    padding: 15px;
+    max-width: 100%;
+  }
+  .list-name {
+    color: #00539A;
+    font-size: 31px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .list-repair {
+    color: #00539A;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .repair {
+    background-color: #D3F4FD;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .repair2 {
+    background-color: #D3F4FD;
+    padding: 10px;
+  }
+
+  .fee-str {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fee-line {
+    height: 19px;
+    width: 182px;
+    background-color: #FEE63C;
+    position: absolute;
+    margin-top: 30px;
+    max-width: 100%;
+   
+  }
+  .fee {
+    color: #FD0101;
+    font-size: 19px;
+    position: relative;
+    padding: 15px 0 10px 0;
+    font-weight: bold;
+  }
+  .bg {
+    font-size: 31px;
+  }
+
+  .result {
+    text-align: center;
+    color: #00539A;
+    font-weight: bold;
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
+  .rd {
+    color: #FD0101;
+  }
+  .result-exp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .result-exp-left {
+    padding: 20px;
+    margin-right: 15px;
+    font-weight: bold;
+    background-color: #D3F4FD;
+  }
+  .result-exp-center {
+    padding: 20px;
+    margin-right: 15px;
+    font-weight: bold;
+    background-color: #D3F4FD;
+  }
+  .result-exp-right {
+    padding: 20px;
+  }
+
+  .trouble {
+    border: 3px solid #00539A;
+    background-color: #FEE63C1A;
+    margin: 60px 160px;
+    padding: 50px 50px;
+  }
+  .trouble-title {
+    font-size: 31px;
+    color: #00539A;
+    border-bottom: 3px dotted #00539A;
+    text-align: center;
+  }
+  .trouble-list-up {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .trouble-list-middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .trouble-list-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .trouble-list{
+    position: relative;
+    padding-left: 25px;
+    list-style: none;
+  }
+  .trouble-list:before {
+    content: "";
+    position: absolute;
+    top: .35em;
+    left: 6px;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+    width: 5px;
+    height: 8px;
+    border-right: 2px solid #FD0101;
+    border-bottom: 2px solid #FD0101;
+  } 
+  .trouble-list:after {
+    content: "";
+    position: absolute;
+    top: .2em;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #00539A;
+    border-radius: 2px;
+  }
+
+  .clear {
+    display: flex;
+    justify-content: center;
+  }
+  .clear-img {
+  width: 480px;
+  }
+  
+  .reliable-title {
+    margin: 60px 0;
+    text-align: center;
+    color: #00539A;
+    font-weight: bold;
+    font-size: 31px;
+  }
+  .reliable-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 160px 20px 160px;
+  }
+  .reliable-list1 {
+    justify-content: flex-start;
+  }
+  .reliable-list2 {
+    margin: 0 30px;
+  }
+  .reliable-list4 {
+    visibility:hidden;
+    margin: 0 30px;
+  }
+  .reliable-list5 {
+    visibility:hidden;
+  }
+  .reliable-list-down {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .caution {
+    border: 3px solid #00539A;
+    background-color: #FEE63C1A;
+    margin: 60px 160px;
+    padding: 50px 50px;
+  }
+  .caution-list {
+    font-size: 31px;
+    color: #00539A;
+    border-bottom: 3px dotted #00539A;
+    text-align: center;
+  }
+  .caution-txt {
+    padding: 20px 0;
+    margin-top: 0.5em;
+  }
+  
+  .contact2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .remark-title {
+    text-align: center;
+    color: #00539A;
+    font-weight: bold;
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
+  .remark {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;    
+  }
+  .remark-img {
+    margin: 0 20px;
+  }
+
+  .order {
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00539A;
+    font-weight: bold;
+  }
+  .order-title {
+    display: flex;
+    justify-content: center;
+    margin: 0 160px;
+  }
+  .order-sub {
+    border: 1px solid #00539A;
+    padding: 30px;
+    margin: 0 10px;
+    width: 220px;
+    height: 350px;
+  }
+  .order-sub-title {
+    color: #FD0101;
+    background-color: #FEE63C;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 180px;
+    height: 30px;
+  }
+  .order-sub-txt {
+    color: #00539A;
+    font-weight: bold;
+  }
+
+  .contact-txt {
+    font-weight: bold;
+    font-size: 31px;
+    text-align: center;
+    margin: 60px 0;
+  }
+
+  .consultation {
+    display: flex;
+    justify-content: center;
+    margin: 30px 60px;
+  }
+  .consultation-img {
+    margin: 0 40px;
+  }
+
+  .operator {
+    display: flex;
+    justify-content: center;
+    margin: 30px 160px;
+    
+  }
+
+  .company {
+    border-top: 1px solid #000;
+    margin:20px 0 120px 0;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .fixed {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 80px;
+    padding-top: 13px ;
+    text-align:center;
+    background-color: #D3F4FD;
+  }
+  .fixed-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-var {
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 3px 9px;
+    width: 250px;
+    height: 60px;
+  }
+  
+  .fixed-btn-line {
+    background-color: #00B900;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #FFF;
+  }
+  .line-icon {
+    width: 20%;
+    margin-right: 8px;
+
+  }
+
+} 
+
+
+ 
+/* スマホ画面 */
+@media screen and (max-width: 599px) {
+  header {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 40%;
+    background-color: #D3F4FD;
+  }
+  .header-tel {
+    width: 60%;
+  }
+
+  .top-img {
+    display: none;
+  }
+  .top-img2 {
+    width: 100vw;
+  }
+
+  .contact-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 90vw;
+  }
+
+  .hospital {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .hospital-txt {
+    width: 90vw;
+  }
+  .hospital-img {
+    width: 90vw;
+  }
+  
+  .estimate-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 90vw;
+  }
+  .estimate-txt {
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .covid-title {
+    width: 186px;
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 31px;
+  }
+  .new-line:before {
+    content: "\A";
+    white-space: pre;
+  }
+  .new-line:after {
+    content: "\A";
+    white-space: pre;
+  }
+  .covid-line {
+    width: 172px;
+    height: 31px;
+    background-color: #FEE63C;
+    position: relative;
+  }
+  .covid-txt {
+    position: absolute;
+  }
+
+  .covid-counterplan-up {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .covid-01 {
+    margin-right: 10px;
+  }
+  .covid-counterplan-down {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .covid-03 {
+    margin-right: 10px;
+  }
+  .covid-counterplan-txt {
+    font-weight: bold;
+    font-size: 19px;
+    background-color: #D3F4FD;
+    width: 650px;
+    height: 240px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 40px 20px;
+  }
+  li {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  .str {
+    color: #00539A;
+    font-size: 31px;
+  }
+  .notes {
+    font-size: 12px;
+  }
+  
+  .list {
+    margin: 20px 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+  }
+  .list-right {
+    margin: 20px 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+  }
+  .list-name {
+    font-size: 31px;
+    color: #00539A;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .list-repair {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .repair {
+    background-color: #D3F4FD;
+    color: #00539A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  .repair2 {
+    background-color: #D3F4FD;
+    color: #00539A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 32px;
+  }
+  .repair-img {
+    width: 240px;
+    height: 180px;
+  }
+  .fee-line {
+    background-color: #FEE63C;
+    width: 200px;
+    height: 19px;
+    position: absolute;
+   
+  }
+  .fee {
+    color: #FD0101;
+    font-weight: bold;
+    position: relative;
+    margin: 20px 0;
+  }
+  .bg {
+    font-size: 31px;
+  }
+  .list-exp {
+    padding-bottom: 10px;
+  }
+  
+  .result {
+    font-size: 31px;
+    color: #00539A;
+    font-weight: bold;
+    text-align: center;
+  }
+  .rd {
+    color: #FD0101;
+  }
+  .rd:before {
+    content: "\A";
+    white-space: pre;
+  }
+  .rd:after {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .result-exp {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .result-exp-left {
+    font-weight: bold;
+    background-color: #D3F4FD;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .result-exp-center {
+    font-weight: bold;
+    background-color: #D3F4FD;
+    padding: 20px;
+  }
+  .br:before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .trouble {
+    border: 3px solid #00539A;
+    background-color: #FEE63C1A;
+    padding: 20px;
+    margin: 20px 20px;
+    }
+  .trouble-title {
+    font-size: 31px;
+    color: #00539A;
+    border-bottom: 3px dotted #00539A;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .trouble-list{
+    position: relative;
+    padding-left: 25px;
+    list-style: none;
+    margin:5px 0;
+  }
+  .trouble-list:before {
+    content: "";
+    position: absolute;
+    top: .35em;
+    left: 6px;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+    width: 5px;
+    height: 8px;
+    border-right: 2px solid #FD0101;
+    border-bottom: 2px solid #FD0101;
+    margin:5px 0;
+  } 
+  .trouble-list:after {
+    content: "";
+    position: absolute;
+    top: .2em;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #00539A;
+    border-radius: 2px;
+    margin:5px 0;
+  }
+
+  .clear-img {
+    width: 100vw;
+  }
+
+  .reliable-title {
+    font-size: 31px;
+    color: #00539A;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .reliable-list {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .reliable-list-down {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .reliable-list2 {
+    margin: 20px 0;
+  }
+
+  .caution {
+    border: 3px solid #00539A;
+    background-color: #FEE63C1A;
+    padding: 20px;
+    margin: 20px 20px;
+  }
+  .caution-list {
+    font-weight: bold;
+    font-size: 31px;
+    color: #00539A;
+    text-align: center;
+    border-bottom: 3px dotted #00539A;
+    margin-bottom: 10px;
+  }
+
+  .contact2-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 90vw;
+  }
+
+  .remark-title {
+    font-weight: bold;
+    font-size: 31px;
+    color: #00539A;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .remark-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 90vw;
+  }
+  
+  .order {
+    font-weight: bold;
+    font-size: 31px;
+    color: #00539A;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nl:before {
+    content: "\A";
+    white-space: pre;
+  }
+  .nl:after {
+    content: "\A";
+    white-space: pre;
+  }
+  .order-sub {
+    border: 1px solid #00539A;
+    margin: 30px;
+    padding: 20px;
+  }
+  .order-sub-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #FD0101;
+    background-color: #FEE63C;
+    height: 2em;
+    padding: 20px;
+  }
+  .order-sub-txt {
+    color: #00539A;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .contact-txt {
+    font-weight: bold;
+    font-size: 31px;
+    text-align: center;
+  }
+
+  .consultation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .consultation-img {
+    margin: 20px;
+    width: 90vw;
+  }
+
+  .operator {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 20px 0;
+  }
+
+  .company {
+    border-top: 1px solid #000;
+    margin:20px 0 120px 0;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+  .fixed {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 80px;
+    padding-top: 13px ;
+    text-align:center;
+    background-color: #D3F4FD;
+  }
+  .fixed-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-var {
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 3px 9px;
+    width: 40%;
+    height: 60px;
+  }
+  .fixed-btn-line {
+    background-color: #00B900;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #FFF;
+    padding: 7px;
+    font-size: 5vmin;
+  }
+  .line-icon {
+    width: 20%;
+    margin-right: 5px;
+  }
+}
