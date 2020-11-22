@@ -8,6 +8,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
       <script type="text/javascript">
       
+      // ①TOP画像(JSで切り替わる箇所)が表示された状態で画像が切り替わると、ウィンドウの一番上まで戻ってしまう
       $(function(){
           var setImg = '#photo-pc';
           var fadeSpeed = 2300;
@@ -67,6 +68,7 @@
       </div>
     </div>
     
+    <!-- ②スマホ画面の時、文字を中央揃いにできない -->
     <div class="covid-title">
       <div class="covid-line"></div>
       <div class="covid-line"></div>
@@ -76,7 +78,7 @@
       </div>
     </div>
     
-
+    <!-- ③ウィンドウ幅を狭くするとレイアウトが大きく崩れる -->
     <div class="covid-counterplan">
       <figure class="covid-counterplan-left">
         <div class="covid-counterplan-up">

@@ -116,6 +116,7 @@ ul,li {
     position: relative;
   }
 
+  /* ③ウィンドウ幅を狭くするとレイアウトが大きく崩れる */
   .covid-counterplan {
     display: flex;
     justify-content: center;
@@ -222,8 +223,7 @@ ul,li {
     background-color: #FEE63C;
     position: absolute;
     margin-top: 30px;
-    max-width: 100%;
-   
+    max-width: 100%; 
   }
   .fee {
     color: #FD0101;
@@ -283,6 +283,7 @@ ul,li {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: 1em;
   }
   .trouble-list-middle {
     display: flex;
@@ -416,7 +417,7 @@ ul,li {
     border: 1px solid #00539A;
     padding: 30px;
     margin: 0 10px;
-    width: 220px;
+    width: 100vw;
     height: 350px;
   }
   .order-sub-title {
@@ -426,7 +427,7 @@ ul,li {
     padding: 20px;
     text-align: center;
     margin-bottom: 10px;
-    width: 180px;
+    width: 140px;
     height: 30px;
   }
   .order-sub-txt {
@@ -453,8 +454,7 @@ ul,li {
   .operator {
     display: flex;
     justify-content: center;
-    margin: 30px 160px;
-    
+    margin: 30px 160px;  
   }
 
   .company {
@@ -581,10 +581,10 @@ ul,li {
     white-space: pre;
   }
 
+  /* ②スマホ画面の時、文字を中央揃いにできない */
   .covid-title {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
   }
   .covid-line {
     margin-top: 20px;
@@ -594,8 +594,7 @@ ul,li {
     position: relative;
   }
   .covid-txt {
-    position: absolute;
-    
+    position: absolute; 
   }
 
   .covid-counterplan-up {
