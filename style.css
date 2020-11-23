@@ -390,12 +390,12 @@ ul,li {
     color: #00539A;
     font-weight: bold;
     font-size: 31px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .remark {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;    
+    margin-bottom: 60px;
   }
   .remark-img {
     margin: 0 20px;
@@ -411,7 +411,6 @@ ul,li {
   .order-title {
     display: flex;
     justify-content: center;
-    /* margin: 0 160px; */
     width: 100vw;
   }
   .order-sub {
@@ -874,6 +873,7 @@ ul,li {
   .order-sub-title {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
     color: #FD0101;
     background-color: #FEE63C;
