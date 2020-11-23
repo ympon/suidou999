@@ -84,13 +84,12 @@ ul,li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 110px;
-    margin: 60px 20px;
+    margin: 60px 30px;
   }
   .estimate-txt {
-    font-size: 19px;
-    width: 455px;
+    font-size: 1.7vw;
+    max-width: 550px;
     text-align: left;
     width: 36%;
     padding-left: 40px;
@@ -952,7 +951,7 @@ ul,li {
     justify-content: center;
     font-weight: bold;
     color: #FFF;
-    padding: 7px;
+    padding: 8px;
     font-size: 5vmin;
   }
   .line-icon {
