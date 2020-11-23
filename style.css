@@ -411,14 +411,15 @@ ul,li {
   .order-title {
     display: flex;
     justify-content: center;
-    margin: 0 160px;
+    /* margin: 0 160px; */
+    width: 100vw;
   }
   .order-sub {
     border: 1px solid #00539A;
     padding: 30px;
     margin: 0 10px;
-    width: 100vw;
-    height: 350px;
+    width: 16vw;
+    height: 100hw;
   }
   .order-sub-title {
     color: #FD0101;
@@ -427,8 +428,9 @@ ul,li {
     padding: 20px;
     text-align: center;
     margin-bottom: 10px;
-    width: 140px;
-    height: 30px;
+    font-size: 1em;
+    width: 80%;
+    height: 10%;
   }
   .order-sub-txt {
     color: #00539A;
