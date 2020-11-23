@@ -485,6 +485,7 @@ ul,li {
     padding: 3px 9px;
     width: 250px;
     height: 60px;
+    cursor: pointer;
   }
   
   .fixed-btn-line {
@@ -498,6 +499,7 @@ ul,li {
     justify-content: center;
     font-weight: bold;
     color: #FFF;
+    cursor: pointer;
   }
   .line-icon {
     width: 20%;
