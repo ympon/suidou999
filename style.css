@@ -344,24 +344,38 @@ ul,li {
   .reliable-list {
     display: flex;
     justify-content: center;
-    margin: 0 160px 20px 160px;
+    margin: 0 110px 20px 110px;
   }
   .reliable-list1 {
-    justify-content: flex-start;
+    width: 33%;
+    height: auto;
+
   }
   .reliable-list2 {
+    width: 33%;
+    height: auto;
     margin: 0 30px;
   }
+  .reliable-list3 {
+    width: 33%;
+    height: auto;
+  }
+
   .reliable-list4 {
     visibility:hidden;
     margin: 0 30px;
+    width: 33%;
+    height: auto;
   }
   .reliable-list5 {
     visibility:hidden;
+    width: 33%;
+    height: auto;
   }
   .reliable-list-down {
     display: flex;
     justify-content: center;
+    margin: 0 110px 20px 110px;
   }
   
   .caution {
@@ -602,13 +616,12 @@ ul,li {
     position: relative;
   }
   .covid-txt {
-    position: absolute; 
+    position: absolute;
   }
 
   .covid-counterplan-up {
     display: flex;
     justify-content: center;
-    margin: 20px;
   }
   .covid-01 {
     margin-right: 10px;
