@@ -202,6 +202,7 @@ ul,li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 22px;
   }
   .fee-line {
     height: 19px;
@@ -209,7 +210,6 @@ ul,li {
     background-color: #FEE63C;
     position: absolute;
     margin-top: 30px;
-    
   }
   .fee {
     color: #FD0101;
