@@ -18,7 +18,9 @@
           $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
       
           setInterval(function(){
+              const y = $(window).scrollTop();
               $(setImg + ' :first-child').animate({opacity:'0.4'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              $(window).scrollTop(y);
           },switchDelay);
       });
 
@@ -29,9 +31,11 @@
       
           $(setImg).children('img').css({opacity:'0.4'});
           $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-      
+
           setInterval(function(){
+              const y = $(window).scrollTop();
               $(setImg + ' :first-child').animate({opacity:'0.4'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              $(window).scrollTop(y);
           },switchDelay);
       });
       </script>   
@@ -80,7 +84,7 @@
     
     <!-- ③ウィンドウ幅を狭くするとレイアウトが大きく崩れる -->
     <div class="covid-counterplan">
-      <figure class="covid-counterplan-left">
+      <div class="covid-counterplan-left">
         <div class="covid-counterplan-up">
           <img src="images/covid-01.png" class="covid-01">
           <img src="images/covid-02.png" class="covid-02">          
@@ -89,17 +93,17 @@
           <img src="images/covid-03.png" class="covid-03">
           <img src="images/covid-04.png" class="covid-04">
         </div>
-      </figure>
-      <figure class="covid-counterplan-right">
-        <ul class="covid-counterplan-txt">
-          <li>出社時にまずは<span class="str">全身消毒・検温</span>にて現場に向かいます。</li>
-          <li><span class="str">再度訪問前</span>に消毒液で全身消毒および検温を行います。</li>
-          <li><span class="str">マスク・手袋</span>は欠かしません。</li>
-        </ul>
+      </div>
+      <div class="covid-counterplan-right">
+        <div class="covid-counterplan-txt">
+          <div>出社時にまずは<span class="str">全身消毒・検温</span>にて現場に向かいます。</div>
+          <div><span class="str">再度訪問前</span>に消毒液で全身消毒および検温を行います。</div>
+          <div><span class="str">マスク・手袋</span>は欠かしません。</div>
+        </div>
         <p class="notes">
           ※マスク・手袋については作業時の妨げになる時には外させて頂く場合もございます。
         </p>
-      </figure>
+      </div>
     </div>
 
     

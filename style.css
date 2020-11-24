@@ -119,44 +119,29 @@ ul,li {
   .covid-counterplan {
     display: flex;
     justify-content: center;
-    margin: 0 140px 60px 140px;
-    height: 340px;
+    margin: 0 90px 60px 90px;
+    height: auto;
   }
   .covid-counterplan-left {
     margin-right: 20px;
-    width: 290px;
-    
+    max-width: 700px;
+    height: auto;
   }
   .covid-counterplan-up {
     margin-bottom: 15px;
-    vertical-align: top;
-   
   }
   .covid-01 {
-    margin-right: 15px;
-    width: 132px;
-  }
-  .covid-02 {
-    width: 132px
-  }
-  .covid-counterplan-down {
-    vertical-align: top;
-  
+    margin-right: 15px;   
   }
   .covid-03 {
-    margin-right: 15px;
+    margin-right: 15px;  
   }
   .covid-counterplan-txt {
     font-weight: bold;
-    font-size: 1.5vw;
     background-color: #D3F4FD;
-    width: 650px;
-    height: 240px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  li {
-    padding: 0 30px 10px 30px;
+    width: 80%;
+    height: auto;
+    padding: 20px 40px;
   }
   .str {
     font-size: 31px;
@@ -250,7 +235,7 @@ ul,li {
   .result-exp {
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin: 0 40px;
   }
   .result-exp-left {
     padding: 20px;
@@ -606,16 +591,19 @@ ul,li {
   .covid-title {
     display: flex;
     flex-direction: column; 
+    margin: 0 auto;
   }
   .covid-line {
     margin-top: 20px;
-    width: 172px;
+    width: 185px;
     height: 31px;
     background-color: #FEE63C;
     position: relative;
   }
   .covid-txt {
     position: absolute;
+    text-align: center;
+
   }
 
   .covid-counterplan-up {
@@ -641,7 +629,7 @@ ul,li {
     height: 240px;
     display: table-cell;
     vertical-align: middle;
-    padding: 40px 20px;
+    padding: 40px 40px;
   }
   li {
     display: inline-block;
