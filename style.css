@@ -16,7 +16,7 @@ ul,li {
   margin: 0;
   list-style: none;
 }
-
+/* ④ 2枚のメイン画像が切り替わらず常に表示されてしまう */
 #photo-pc {
   margin: 0 auto;
   text-align: left;
