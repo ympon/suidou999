@@ -18,16 +18,12 @@ ul,li {
 }
 
 #photo-pc {
-  width: 100vw;
-  height: 100%;
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
 }
 
 #photo {
-  width: 100vw;
-  height: 50%;
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
@@ -49,7 +45,7 @@ ul,li {
 
   .top-img {
     width: 100vw;
-    height: 100%;
+    height: auto;
   }
   .top-img2 {
     display: none;
@@ -68,7 +64,7 @@ ul,li {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 480px;
+    height: auto;
     margin: 0 10px;
   }
   .hospital-txt {
@@ -86,6 +82,10 @@ ul,li {
     align-items: center;
     height: 110px;
     margin: 60px 30px;
+  }
+  .estimate-img {
+    width: 50%;
+    height: auto;
   }
   .estimate-txt {
     font-size: 1.7vw;
@@ -255,7 +255,7 @@ ul,li {
   .trouble {
     border: 3px solid #00539A;
     background-color: #FEE63C1A;
-    margin: 60px 160px;
+    margin: 60px 130px;
     padding: 50px 50px;
   }
   .trouble-title {
@@ -534,8 +534,8 @@ ul,li {
     display: none;
   }
   .top-img2 {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .contact-img {
@@ -589,7 +589,7 @@ ul,li {
   .covid-title {
     display: flex;
     flex-direction: column; 
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .covid-line {
     margin-top: 20px;
@@ -601,7 +601,6 @@ ul,li {
   .covid-txt {
     position: absolute;
     text-align: center;
-
   }
 
   .covid-counterplan-up {
@@ -618,6 +617,9 @@ ul,li {
   }
   .covid-03 {
     margin-right: 10px;
+  }
+  .covid-counterplan-right {
+    margin: 0 10px;
   }
   .covid-counterplan-txt {
     font-weight: bold;
@@ -958,5 +960,8 @@ ul,li {
   .line-icon {
     width: 20%;
     margin-right: 5px;
+  }
+  .line-txt {
+    font-size: 0.8em;
   }
 }
