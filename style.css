@@ -115,7 +115,6 @@ ul,li {
     position: relative;
   }
 
-  /* ③ウィンドウ幅を狭くするとレイアウトが大きく崩れる */
   .covid-counterplan {
     display: flex;
     justify-content: center;
@@ -587,7 +586,6 @@ ul,li {
     white-space: pre;
   }
 
-  /* ②スマホ画面の時、文字を中央揃いにできない */
   .covid-title {
     display: flex;
     flex-direction: column; 
@@ -630,10 +628,6 @@ ul,li {
     display: table-cell;
     vertical-align: middle;
     padding: 40px 40px;
-  }
-  li {
-    display: inline-block;
-    vertical-align: baseline;
   }
   .str {
     color: #00539A;
