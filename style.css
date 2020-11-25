@@ -17,6 +17,15 @@ ul,li {
   list-style: none;
 }
 /* ④ 2枚のメイン画像が切り替わらず常に表示されてしまう */
+
+/* ↓こちらを書き加えてみると画像は重なりますが、position:fixed;を取っている、スクロールで追従するバーの部分(HTML:290行目〜)に被ってしまいます。
+#photo-pc img {
+  position: absolute;
+}
+#photo img {
+  position: absolute;
+} */
+
 #photo-pc {
   margin: 0 auto;
   text-align: left;

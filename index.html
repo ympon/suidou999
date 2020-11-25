@@ -11,12 +11,12 @@
           var fadeSpeed = 2300;
           var switchDelay = 5000;
       
-          $(setImg).children('img').css({opacity:'0.4'});
+          $(setImg).children('img').css({opacity:'0'});
           $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
       
           setInterval(function(){
               const y = $(window).scrollTop();
-              $(setImg + ' :first-child').animate({opacity:'0.4'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
               $(window).scrollTop(y);
           },switchDelay);
       });
@@ -26,12 +26,12 @@
           var fadeSpeed = 2300;
           var switchDelay = 5000;
       
-          $(setImg).children('img').css({opacity:'0.4'});
+          $(setImg).children('img').css({opacity:'0'});
           $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
 
           setInterval(function(){
               const y = $(window).scrollTop();
-              $(setImg + ' :first-child').animate({opacity:'0.4'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
               $(window).scrollTop(y);
           },switchDelay);
       });
