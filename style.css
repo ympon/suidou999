@@ -29,13 +29,14 @@ ul,li {
 #photo-pc {
   margin: 0 auto;
   text-align: left;
-  overflow: hidden;
+  height: 40vw;
 }
 
 #photo {
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
+  height: 50%;
 }
 
 /* PC画面 */
@@ -54,7 +55,7 @@ ul,li {
 
   .top-img {
     width: 100vw;
-    height: auto;
+    position: absolute;
   }
   .top-img2 {
     display: none;
@@ -66,7 +67,7 @@ ul,li {
   .contact {
     display: flex;
     justify-content: center;
-    margin: 60px 20px;
+    margin: 20px 20px 60px 20px;
   }
 
   .hospital {
@@ -544,7 +545,7 @@ ul,li {
   }
   .top-img2 {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .contact-img {
