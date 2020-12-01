@@ -43,6 +43,10 @@ ul,li {
     height: 73px;
     background-color: #D3F4FD;
   }
+  .header-line {
+    height: 73px;
+    cursor: pointer;
+  }
 
   .top-img {
     width: 100vw;
@@ -59,22 +63,6 @@ ul,li {
     display: flex;
     justify-content: center;
     margin: 20px 20px 60px 20px;
-  }
-
-  .hospital {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: auto;
-    margin: 0 10px;
-  }
-  .hospital-txt {
-    margin-left: 160px;
-    width: 40%;
-  }
-  .hospital-img {
-   margin-right: 160px;
-   width: 40%;
   }
 
   .estimate {
@@ -524,6 +512,9 @@ ul,li {
     width: 40%;
     background-color: #D3F4FD;
   }
+  .header-line {
+    display: none;
+  }
   .header-tel {
     width: 60%;
   }
@@ -543,19 +534,6 @@ ul,li {
     display: flex;
     justify-content: center;
     margin: 20px;
-    width: 90vw;
-  }
-
-  .hospital {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 20px;
-  }
-  .hospital-txt {
-    width: 90vw;
-  }
-  .hospital-img {
     width: 90vw;
   }
   
